@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetdefindesemetrecsc301.PageDinscription">
+   <left>
+      <AnchorPane fx:id="main" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #3E2D62;" BorderPane.alignment="CENTER">
+         <FontAwesomeIcon fill="#fff7f7" glyphName="CALENDAR" layoutX="115.0" layoutY="199.0" size="100" />
+         <Label layoutX="99.0" layoutY="255.0" prefHeight="28.0" prefWidth="123.0" text="PlanningPlus" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="19.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <FontAwesomeIcon fill="#3e2d62" glyphName="USER_PLUS" layoutX="146.0" layoutY="89.0" size="55" />
+         <Label layoutX="130.0" layoutY="102.0" prefHeight="27.0" prefWidth="100.0" text="Inscription" textFill="#3e2d62">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="nom" layoutX="105.0" layoutY="155.0" promptText="nom" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+         <TextField fx:id="prenom" layoutX="104.0" layoutY="218.0" promptText="prenom" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+         <TextField fx:id="username" layoutX="104.0" layoutY="282.0" promptText="nom d'utilisateur" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+         <PasswordField fx:id="password" layoutX="104.0" layoutY="344.0" promptText="mot de passe" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+         <Button fx:id="BouttonInscription" layoutX="132.0" layoutY="417.0" mnemonicParsing="false" onAction="#Enregistrer" style="-fx-background-color: #3E2D62; -fx-border-radius: 5;" text="S'inscrire" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Button>
+         <Label fx:id="LoginMessageFailed" layoutX="107.0" layoutY="138.0" prefHeight="18.0" prefWidth="129.0" textFill="#0c8e49" />
+      </AnchorPane>
+   </right>
+</BorderPane>

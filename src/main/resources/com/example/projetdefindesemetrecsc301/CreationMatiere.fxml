@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetdefindesemetrecsc301.CreationMatiere">
+   <children>
+      <Pane layoutX="247.0" layoutY="8.0" prefHeight="91.0" prefWidth="200.0" style="-fx-background-color: #7156DC;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="53.0" layoutY="20.0" text="/Dashboard/Matière" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="46.0" text="Matières" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="BOOK" layoutX="21.0" layoutY="51.0" size="30" />
+         </children>
+      </Pane>
+      <TextField fx:id="MatiereRechercher" layoutX="637.0" layoutY="98.0" promptText="Rechercher..." style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <FontAwesomeIcon fill="#3e2d62" glyphName="SEARCH" layoutX="626.0" layoutY="115.0" size="15" />
+      <TextField fx:id="code" layoutX="71.0" layoutY="135.0" promptText="Code" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="intitule" layoutX="70.0" layoutY="200.0" promptText="intitulé" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+      <TableView fx:id="table" layoutX="197.0" layoutY="285.0" prefHeight="265.0" prefWidth="780.0" stylesheets="@Style.css" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="codeColumn" prefWidth="75.0" text="Code" />
+          <TableColumn fx:id="intitutleColumn" prefWidth="75.0" text="intitulé" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="Benregistrer" layoutX="255.0" layoutY="179.0" mnemonicParsing="false" onAction="#AjoutMatiere" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #3E2D62;" text="Ajouter" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="PLUS" size="15" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

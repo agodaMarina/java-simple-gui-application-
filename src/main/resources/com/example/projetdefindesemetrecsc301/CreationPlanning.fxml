@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetdefindesemetrecsc301.CreationPlanning">
+   <children>
+      <Pane layoutX="220.0" layoutY="34.0" prefHeight="81.0" prefWidth="200.0" style="-fx-background-color: #7156DC;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="54.0" layoutY="20.0" text="/Dashboard/Planning" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="41.0" text="Planning" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR_ALT" layoutX="21.0" layoutY="51.0" size="30" />
+         </children>
+      </Pane>
+       <Button layoutX="243.0" layoutY="121.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="318.0" style="-fx-background-color: #3E2D62;" text="Etablisser un nouveau emploi du temps" textFill="WHITE">
+           <font>
+               <Font size="14.0" />
+           </font>
+       </Button>
+       <Button fx:id="Benregistrer" layoutX="329.0" layoutY="463.0" mnemonicParsing="false" onAction="#enregistrer" prefHeight="36.0" prefWidth="166.0" style="-fx-background-color: #3E2D62;" text="créer" textFill="WHITE">
+           <graphic>
+               <FontAwesomeIcon fill="WHITE" glyphName="PLUS" size="20" />
+           </graphic>
+           <font>
+               <Font size="14.0" />
+           </font>
+       </Button>
+       <Label fx:id="messageChampVide" layoutX="271.0" layoutY="188.0" prefHeight="18.0" prefWidth="258.0" textFill="#9e0a0a">
+           <font>
+               <Font size="16.0" />
+           </font>
+       </Label>
+      <ComboBox fx:id="Enseignant" layoutX="168.0" layoutY="230.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+      <ComboBox fx:id="Matiere" layoutX="508.0" layoutY="229.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="HeureDebut" layoutX="171.0" layoutY="334.0" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="HeureFin" layoutX="515.0" layoutY="332.0" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label layoutX="96.0" layoutY="234.0" prefHeight="18.0" prefWidth="67.0" text="Enseignant:" />
+      <Label layoutX="458.0" layoutY="232.0" text="Cours:" />
+      <Label layoutX="438.0" layoutY="335.0" prefHeight="18.0" prefWidth="77.0" text="Heure de fin:" />
+      <Label layoutX="80.0" layoutY="338.0" text="Heure de début:" />
+      <Label fx:id="LoginMessageFailed" layoutX="96.0" layoutY="179.0" prefHeight="22.0" prefWidth="630.0" textFill="#a40d0d">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

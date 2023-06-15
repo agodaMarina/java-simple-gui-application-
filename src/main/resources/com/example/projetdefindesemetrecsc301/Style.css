@@ -1,0 +1,41 @@
+.table-view .column-header,
+.table-view .column-header-background .filter {
+    -fx-cell-size: 20;
+    -fx-background-color:   #7156DC;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell {
+    -fx-cell-size: 30;
+    -fx-alignment: center_left;
+    -fx-text-fill: #000000;
+}
+.table-row-cell:selected {
+    -fx-background-color: rgb(127, 172, 243);
+}
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+/*scroll bar */
+
+.table-view .increment-button , .table-view .decrement-button {
+    -fx-background-color: transparent;
+}
+
+/*boutton hover*/
+.button:hover{
+    -fx-background-color: #A1C1F4;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.button:pressed{
+    -fx-background-color: #7156DD;
+}
+.button{
+    -fx-background-color: #3E2D62;
+}

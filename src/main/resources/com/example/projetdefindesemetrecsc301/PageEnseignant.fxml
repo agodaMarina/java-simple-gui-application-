@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetdefindesemetrecsc301.PageEnseignant">
+    <right>
+        <AnchorPane prefHeight="504.0" prefWidth="402.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <FontAwesomeIcon fill="#3e2d62" glyphName="USER_PLUS" layoutX="142.0" layoutY="58.0" size="55" />
+            <Label layoutX="69.0" layoutY="75.0" prefHeight="27.0" prefWidth="228.0" text="Enregistrer un enseignant" textFill="#3e2d62">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="prenom" layoutX="103.0" layoutY="183.0" promptText="prenom" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="tel" layoutX="102.0" layoutY="234.0" promptText="tel" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="email" layoutX="105.0" layoutY="299.0" promptText="email" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="BouttonInscription" layoutX="130.0" layoutY="414.0" mnemonicParsing="false" onAction="#AjoutEnseignant" style="-fx-background-color: #3E2D62; -fx-border-radius: 5;" text="Ajouter" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font></Button>
+            <Button fx:id="close" layoutX="331.0" layoutY="-2.0" mnemonicParsing="false" onAction="#CloseWindow" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white;" />
+            <Label fx:id="LoginMessageFailed" layoutX="107.0" layoutY="138.0" prefHeight="18.0" prefWidth="129.0" textFill="#0c8e49" />
+         <TextField fx:id="nom" layoutX="103.0" layoutY="125.0" promptText="nom" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+         <Label fx:id="messageChampVide" layoutX="95.0" layoutY="102.0" prefHeight="18.0" prefWidth="156.0" />
+        </AnchorPane>
+    </right>
+</BorderPane>

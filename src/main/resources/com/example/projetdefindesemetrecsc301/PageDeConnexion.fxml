@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetdefindesemetrecsc301.PageDeConnexion">
+   <center>
+        <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <TextField fx:id="username" layoutX="106.0" layoutY="212.0" promptText="username" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="password" layoutX="106.0" layoutY="288.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: #3E2D62; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontAwesomeIcon fill="#3e2d62" glyphName="USER" layoutX="66.0" layoutY="233.0" size="20" />
+            <FontAwesomeIcon fill="#3e2d62" glyphName="KEY" layoutX="68.0" layoutY="309.0" size="20" />
+            <Button fx:id="connexion" layoutX="124.0" layoutY="359.0" mnemonicParsing="false" onAction="#BoutonConnexionVide" style="-fx-background-color: #3E2D62; -fx-border-radius: 5px 5px 5px  5px;" text="Connexion" textFill="#fff2f2">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Button>
+            <FontAwesomeIcon fill="#3e2d62" glyphName="SIGN_IN" layoutX="158.0" layoutY="107.0" size="55" AnchorPane.leftAnchor="147.5" AnchorPane.rightAnchor="147.5" />
+            <Label layoutX="122.0" layoutY="129.0" prefHeight="27.0" prefWidth="122.0" text="Connexion" textFill="#3e2d62">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Label>
+         <Label fx:id="LoginMessageFailed" layoutX="52.0" layoutY="167.0" prefHeight="18.0" prefWidth="262.0" textFill="#0eb79a" />
+        </AnchorPane>
+   </center>
+</BorderPane>
